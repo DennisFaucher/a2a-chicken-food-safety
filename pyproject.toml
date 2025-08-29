@@ -1,0 +1,31 @@
+[project]
+name = "a2a-chicken-food-safety"
+version = "0.1.0"
+description = "Agent-to-Agent system for checking chicken food safety"
+authors = [
+    {name = "User", email = "user@example.com"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "flask>=2.3.3",
+    "requests>=2.31.0",
+    "werkzeug>=2.3.7"
+]
+
+[project.scripts]
+a2a-server = "a2a_chicken_food_safety.server:main"
+a2a-client = "a2a_chicken_food_safety.client:main"
+
+[project.urls]
+Homepage = "https://github.com/example/a2a-chicken-food-safety"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=5.0.0",
+]
