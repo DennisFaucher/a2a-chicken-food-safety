@@ -44,7 +44,7 @@ graph TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/a2a-chicken-food-safety.git
+git clone https://github.com/dennisfaucher/a2a-chicken-food-safety.git
 cd a2a-chicken-food-safety
 
 # Install dependencies with uv
